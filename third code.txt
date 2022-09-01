@@ -1,0 +1,13 @@
+public class program {
+    public static void main(String[] args) {
+         int [] a;
+   //int a[];          
+   a = new int[10]; 
+   int i;
+   for (i = 0;  i < 10;  i++)
+   //for (i = 9;  i >= 0;  i--)
+     System.out.println(
+       "a[" + i + "] = " + a[i]);
+   a = null;    
+    }
+}
