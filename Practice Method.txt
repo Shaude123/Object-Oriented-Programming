@@ -1,0 +1,54 @@
+class Practice {
+  // Method 1
+  public static void print() {
+    System.out.println("This is a practice program");
+  } 
+
+  // Method 2
+  public static void equation() {
+    // a(by-c)+dy=e
+    // 3(2y-5)+4y=5
+    int Num[] = {3,2,5,4,5,0,0,0,0,0};
+    
+    Num[5] = Num[0] * Num[1];
+    Num[6] = Num[0] * Num[2];
+    Num[7] = Num[5] + Num[3];
+    Num[8] = Num[6] + Num[4];
+    Num[9] = Num[8] / Num[7];
+    
+    System.out.println(Num[0] + "(" + Num[1] + "y-" + Num[2] + "y)" + "+" + Num[3] + "y=" + Num[4]);
+    System.out.println(Num[5] + "y-" + Num[6] + "+" + Num[3] + "y=" + Num[4]);
+    System.out.println(Num[7] + "y-" + Num[6] + "=" + Num[4]);
+    System.out.println(Num[7] + "y=" + Num[8]);
+    System.out.println("y=" + Num[9]);
+  }
+
+  // Method 3
+  public static void encap1() {
+    System.out.println(" This is my name");  
+  }
+
+  // Method 4
+  public static void encap2() {
+    encap1();
+  }
+}
+
+class Pract extends Practice {
+  // Extend Method 3
+  public static void encap1() {
+    // Empty Method
+  }
+}
+
+
+
+class Main {
+  public static void main(String[] args) {
+    Pract myPractice = new Pract();
+    
+    myPractice.print();
+    myPractice.equation();
+    myPractice.encap2();
+  }
+}
